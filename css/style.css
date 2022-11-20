@@ -1,0 +1,841 @@
+/* importation des autres css */
+
+@import url('componant/jv.css');
+@import url('componant/3D.css');
+@import url('componant/cod.css');
+@import url('componant/markcom.css');
+@import url('componant/creadesign.css');
+
+
+
+
+html{ /* écriture apple */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+    
+/*                                        texte + ANIMATION                                    */
+body{
+    text-align: center;
+    margin: 0;}
+
+    @media (min-width: 480px) and (max-width:767px) {
+
+.titrepresentation{
+    
+    text-align: center;
+}
+.titre{
+    font-size: 160%;
+}
+.titrepresentation:hover {
+    background-image: url(../img/titi.jpg);
+    background-position: 0%;
+    background-size: 18%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+}
+
+
+
+
+/*                                      GIF IMAGE HEADER    + CAROUSEL                */
+#gifport {
+    background-position-y: 50%;
+    background-position-x: 54%;
+    background-image: url(../img/portfolio.gif);
+    background-size: 76%;
+}
+#gif3D {     background-image: url(../img/lumiere.gif);
+    background-size: 25%;
+    background-position-x: -67%;
+    background-position-y: 50%;
+
+}
+#gifprog {
+    background-position-x: 100%;
+    background-image: url(../img/programming.gif);
+    background-size: 26%;
+}
+#gifmark {
+    background-image: url(../img/communication.gif);
+    background-size: 20%;
+    background-position-x: 0;
+}
+
+.carousel-control-prev {
+width: 8%;
+            backdrop-filter: saturate(250%) blur(1vh);
+        background-color: rgba(255, 255, 255, 0.100);
+                            }
+                            .carousel-control-next {
+                                width: 8%;
+                                            backdrop-filter: saturate(250%) blur(1vh);
+                                        background-color: rgba(255, 255, 255, 0.100);
+                                                            }
+
+
+
+
+
+/*                                     WIREFRAME ANIMATION ET DISPOSITION                */                                                            
+.image {
+    display: flex;
+    text-align: center;
+    margin: 5%;
+    justify-content: space-between;
+}
+.wireframe1{
+    
+    width: 20%;
+    margin-right: 10%;
+    transition: all 1s ease-out 1s;
+    animation-name: transform;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    
+
+}
+.wireframe1:hover{
+    transform:rotate(360deg) translate(150%,3em) scale(3);
+    z-index: 99;
+}
+@keyframes transform {
+    from {
+      
+        background:blue;
+    }
+to{
+    transform: rotate(45deg);
+}
+}
+
+
+
+
+.wireframe2{
+        width: 20%;
+        margin-left: 10%;
+        transform: rotate(-45deg);
+        transition: all 1s ease-out 1s;
+}
+    .wireframe2:hover{
+
+        transform: rotate(-360deg) translate(-150%,3em) scale(3);
+        z-index: 99;}
+.wireframe3{
+    width: 20%;
+
+}
+.wireframe3:hover {
+    transform:translate(0,3em) scale(3);
+}
+
+.wireframe4{
+    width: 20%;
+    margin-right: 10%;
+    transform: rotate(-45deg);
+    transition: all 1s ease-out 1s;
+    
+}
+.wireframe4:hover{
+    transform: rotate(360deg) translate(150%,-7em) scale(3);
+    z-index: 99;}
+.wireframe6{
+    
+    width: 20%;
+    margin-left: 10%;
+    animation-name: transform6;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    transition: all 1s ease-out 1s;
+}
+@keyframes transform6 {
+    from {
+      
+        background:blue;
+    }
+to{
+    transform: rotate(45deg);
+}
+}
+.wireframe6:hover{
+    transform: rotate(360deg) translate(-150%,-7em) scale(3);
+    z-index: 99;}
+.wireframe5{
+    width: 20%;}
+.wireframe5:hover{
+    transform: translate(0,-7em) scale(3);
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+
+    .titrepresentation{
+    
+        text-align: center;
+    }
+    .titre{
+        font-size: 180%;
+    }
+    .titrepresentation:hover {
+        background-image: url(../img/titi.jpg);
+        background-position: 0%;
+        background-size: 18%;
+        background-position-x: 50%;
+        background-repeat: no-repeat;
+    }
+    .textreseau{
+        font-size: 130%;
+    }
+    
+
+    /*                                      GIF IMAGE HEADER    + CAROUSEL                */
+    #gifport {
+        background-position-y: 50%;
+        background-position-x: 54%;
+        background-image: url(../img/portfolio.gif);
+        background-size: 76%;
+        height: 100px;
+        
+    }
+    #gif3D {         
+        background-image: url(../img/lumiere.gif);
+        background-size: 24%;
+        background-position-x: -61%;
+        background-position-y: 50%;
+        height: 100px;
+    }
+    #gifprog {
+        background-position-x: 100%;
+        background-image: url(../img/programming.gif);
+        background-size: 26%;
+        height: 100px;
+    }
+    #gifmark {
+        background-image: url(../img/communication.gif);
+        background-size: 20%;
+        background-position-x: 0;
+        height: 100px;
+    }
+    #gifcod {
+        height: 100px;
+    }
+    #gifcrea{
+        height: 100px;
+    }
+    .carousel-control-prev {
+    width: 8%;
+                backdrop-filter: saturate(250%) blur(1vh);
+            background-color: rgba(255, 255, 255, 0.100);
+                                }
+                                .carousel-control-next {
+                                    width: 8%;
+                                                backdrop-filter: saturate(250%) blur(1vh);
+                                            background-color: rgba(255, 255, 255, 0.100);
+                                                                }
+    
+    
+    .textprog {
+        font-size: 150%;
+    }
+    .text3d{
+        font-size:150%;
+    }
+    .textcod {
+        font-size:150%;
+    }
+    .textcrea{
+        font-size:150%;
+    }
+    .textmark{
+        font-size:150%;
+    }
+    /*                                     WIREFRAME ANIMATION ET DISPOSITION                */                                                            
+    .image {
+        display: flex;
+        margin: 5%;
+        justify-content: space-between;
+    }
+    .wireframe1{
+    
+        width: 20%;
+        margin-right: 10%;
+        transition: all 1s ease-out 1s;
+        animation-name: transform;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        
+    
+    }
+    .wireframe1:hover{
+        transform:rotate(360deg) translate(150%,3em) scale(2);
+        z-index: 99;
+    }
+    @keyframes transform {
+        from {
+          
+            background:blue;
+        }
+    to{
+        transform: rotate(45deg);
+    }
+    }
+    
+    
+    
+    
+    .wireframe2{
+            width: 20%;
+            margin-left: 10%;
+            transform: rotate(-45deg);
+            transition: all 1s ease-out 1s;
+    }
+        .wireframe2:hover{
+    
+            transform: rotate(-360deg) translate(-150%,3em) scale(2);
+            z-index: 99;}
+    .wireframe3{
+        width: 20%;
+    
+    }
+    .wireframe3:hover {
+        transform:translate(0,3em) scale(2);
+    }
+    
+    .wireframe4{
+        width: 20%;
+        margin-right: 10%;
+        transform: rotate(-45deg);
+        transition: all 1s ease-out 1s;
+        
+    }
+    .wireframe4:hover{
+        transform: rotate(360deg) translate(150%,-7em) scale(2);
+        z-index: 99;}
+    .wireframe6{
+        
+        width: 20%;
+        margin-left: 10%;
+        animation-name: transform6;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        transition: all 1s ease-out 1s;
+    }
+    @keyframes transform6 {
+        from {
+          
+            background:blue;
+        }
+    to{
+        transform: rotate(45deg);
+    }
+    }
+    .wireframe6:hover{
+        transform: rotate(360deg) translate(-150%,-7em) scale(2);
+        z-index: 99;}
+    .wireframe5{
+        width: 20%;}
+    .wireframe5:hover{
+        transform: translate(0,-7em) scale(2);
+    }
+    
+    }
+    @media (min-width: 992px) and (max-width: 1439px){ 
+        .titrepresentation{
+    
+            text-align: center;
+        }
+        .titre{
+            font-size: 240%;
+        }
+        .texte {
+        font-size: 140%;
+        }
+        .titrepresentation:hover {
+            background-image: url(../img/titi.jpg);
+            background-position: 0%;
+            background-size: 18%;
+            background-position-x: 50%;
+            background-repeat: no-repeat;
+        }
+        .textreseau{
+            font-size: 130%;
+        }
+        
+    
+        /*                                      GIF IMAGE HEADER    + CAROUSEL                */
+        #gifport {
+            background-position-y: 50%;
+            background-position-x: 54%;
+            background-image: url(../img/portfolio.gif);
+            background-size: 76%;
+            height: 110px;
+            
+        }
+        #gif3D {         
+            background-image: url(../img/lumiere.gif);
+            background-size: 21%;
+            background-position-x: -46%;
+            background-position-y: 50%;
+            height: 110px;
+        }
+        #gifprog {
+            background-position-x: 100%;
+            background-image: url(../img/programming.gif);
+            background-size: 20%;
+            height: 110px;
+        }
+        #gifmark {
+            background-image: url(../img/communication.gif);
+            background-size: 20%;
+            background-position-x: 0;
+            height: 110px;
+        }
+        #gifcod {
+            height: 110px;
+        }
+        #gifcrea{
+            height: 110px;
+        }
+        .carousel-control-prev {
+        width: 8%;
+                    backdrop-filter: saturate(250%) blur(1vh);
+                background-color: rgba(255, 255, 255, 0.100);
+                                    }
+                                    .carousel-control-next {
+                                        width: 8%;
+                                                    backdrop-filter: saturate(250%) blur(1vh);
+                                                background-color: rgba(255, 255, 255, 0.100);
+                                                                    }
+        
+        
+        .textprog {
+            font-size: 170%;
+        }
+        .text3d{
+            font-size:170%;
+        }
+        .textcod {
+            font-size:170%;
+        }
+        .textcrea{
+            font-size:170%;
+        }
+        .textmark{
+            font-size:170%;
+        }
+        /*                                     WIREFRAME ANIMATION ET DISPOSITION                */                                                            
+        .image {
+            display: flex;
+            margin: 5%;
+            justify-content: space-between;
+        }
+        .wireframe1{
+    
+            width: 20%;
+            margin-right: 10%;
+            transition: all 1s ease-out 1s;
+            animation-name: transform;
+            animation-duration: 4s;
+            animation-fill-mode: forwards;
+            
+        
+        }
+        .wireframe1:hover{
+            transform:rotate(360deg) translate(150%,3em) scale(2);
+            z-index: 99;
+        }
+        @keyframes transform {
+            from {
+              
+                background:blue;
+            }
+        to{
+            transform: rotate(45deg);
+        }
+        }
+        
+        
+        
+        
+        .wireframe2{
+                width: 20%;
+                margin-left: 10%;
+                transform: rotate(-45deg);
+                transition: all 1s ease-out 1s;
+        }
+            .wireframe2:hover{
+        
+                transform: rotate(-360deg) translate(-150%,3em) scale(2);
+                z-index: 99;}
+        .wireframe3{
+            width: 20%;
+        
+        }
+        .wireframe3:hover {
+            transform:translate(0,3em) scale(2);
+        }
+        
+        .wireframe4{
+            width: 20%;
+            margin-right: 10%;
+            transform: rotate(-45deg);
+            transition: all 1s ease-out 1s;
+            
+        }
+        .wireframe4:hover{
+            transform: rotate(360deg) translate(150%,-7em) scale(2);
+            z-index: 99;}
+        .wireframe6{
+            
+            width: 20%;
+            margin-left: 10%;
+            animation-name: transform6;
+            animation-duration: 4s;
+            animation-fill-mode: forwards;
+            transition: all 1s ease-out 1s;
+        }
+        @keyframes transform6 {
+            from {
+              
+                background:blue;
+            }
+        to{
+            transform: rotate(45deg);
+        }
+        }
+        .wireframe6:hover{
+            transform: rotate(360deg) translate(-150%,-7em) scale(2);
+            z-index: 99;}
+        .wireframe5{
+            width: 20%;}
+        .wireframe5:hover{
+            transform: translate(0,-7em) scale(2);
+        }
+        
+        }
+        @media (min-width: 1440px) and (max-width: 2000px){ 
+            .titrepresentation{
+        
+                text-align: center;
+            }
+            .titre{
+                font-size: 270%;
+            }
+            .texte {
+            font-size: 130%;
+            }
+            .titrepresentation:hover {
+                background-image: url(../img/titi.jpg);
+                background-position-y: -30%;
+                background-size: 13%;
+                background-position-x: 50%;
+                background-repeat: no-repeat;
+            }
+            .textreseau{
+                font-size: 150%;
+            }
+            
+        
+            /*                                      GIF IMAGE HEADER    + CAROUSEL                */
+            #gifport {
+                background-position-y: 50%;
+                background-position-x: 54%;
+                background-image: url(../img/portfolio.gif);
+                background-size: 76%;
+                height: 110px;
+                
+            }
+            #gif3D {         
+                background-image: url(../img/lumiere.gif);
+                background-size: 21%;
+                background-position-x: -46%;
+                background-position-y: 50%;
+                height: 110px;
+            }
+            #gifprog {
+                background-position-x: 100%;
+                background-image: url(../img/programming.gif);
+                background-size: 20%;
+                height: 110px;
+            }
+            #gifmark {
+                background-image: url(../img/communication.gif);
+                background-size: 20%;
+                background-position-x: 0;
+                height: 110px;
+            }
+            #gifcod {
+                height: 110px;
+            }
+            #gifcrea{
+                height: 110px;
+            }
+            .carousel-control-prev {
+            width: 8%;
+                        backdrop-filter: saturate(250%) blur(1vh);
+                    background-color: rgba(255, 255, 255, 0.100);
+                                        }
+                                        .carousel-control-next {
+                                            width: 8%;
+                                                        backdrop-filter: saturate(250%) blur(1vh);
+                                                    background-color: rgba(255, 255, 255, 0.100);
+                                                                        }
+            
+            
+            .textprog {
+                font-size: 170%;
+            }
+            .text3d{
+                font-size:170%;
+            }
+            .textcod {
+                font-size:170%;
+            }
+            .textcrea{
+                font-size:170%;
+            }
+            .textmark{
+                font-size:170%;
+            }
+            /*                                     WIREFRAME ANIMATION ET DISPOSITION                */                                                            
+            .image {
+                display: flex;
+                margin: 5%;
+                justify-content: space-between;
+            }
+            .wireframe1{
+    
+                width: 20%;
+                margin-right: 10%;
+                transition: all 1s ease-out 1s;
+                animation-name: transform;
+                animation-duration: 4s;
+                animation-fill-mode: forwards;
+                
+            
+            }
+            .wireframe1:hover{
+                transform:rotate(360deg) translate(150%,3em) scale(1.5);
+                z-index: 99;
+            }
+            @keyframes transform {
+                from {
+                  
+                    background:blue;
+                }
+            to{
+                transform: rotate(45deg);
+            }
+            }
+            
+            
+            
+            
+            .wireframe2{
+                    width: 20%;
+                    margin-left: 10%;
+                    transform: rotate(-45deg);
+                    transition: all 1s ease-out 1s;
+            }
+                .wireframe2:hover{
+            
+                    transform: rotate(-360deg) translate(-150%,3em) scale(1.5);
+                    z-index: 99;}
+            .wireframe3{
+                width: 20%;
+            
+            }
+            .wireframe3:hover {
+                transform:translate(0,3em) scale(1.5);
+            }
+            
+            .wireframe4{
+                width: 20%;
+                margin-right: 10%;
+                transform: rotate(-45deg);
+                transition: all 1s ease-out 1s;
+                
+            }
+            .wireframe4:hover{
+                transform: rotate(360deg) translate(150%,-7em) scale(1.5);
+                z-index: 99;}
+            .wireframe6{
+                
+                width: 20%;
+                margin-left: 10%;
+                animation-name: transform6;
+                animation-duration: 4s;
+                animation-fill-mode: forwards;
+                transition: all 1s ease-out 1s;
+            }
+            @keyframes transform6 {
+                from {
+                  
+                    background:blue;
+                }
+            to{
+                transform: rotate(45deg);
+            }
+            }
+            .wireframe6:hover{
+                transform: rotate(360deg) translate(-150%,-7em) scale(1.5);
+                z-index: 99;}
+            .wireframe5{
+                width: 20%;}
+            .wireframe5:hover{
+                transform: translate(0,-7em) scale(1.5);
+            }
+            
+            }
+            @media (min-width: 0px) and (max-width:480px) {
+
+                .titrepresentation{
+                    
+                    text-align: center;
+                }
+                .titre{
+                    font-size: 160%;
+                }
+                .titrepresentation:hover {
+                    background-image: url(../img/titi.jpg);
+                    background-position: 0%;
+                    background-size: 18%;
+                    background-position-x: 50%;
+                    background-repeat: no-repeat;
+                }
+                
+                
+                
+                
+                /*                                      GIF IMAGE HEADER    + CAROUSEL                */
+                #gifport {
+                    background-position-y: 50%;
+                    background-position-x: 54%;
+                    background-image: url(../img/portfolio.gif);
+                    background-size: 76%;
+                }
+                #gif3D {     background-image: url(../img/lumiere.gif);
+                    background-size: 25%;
+                    background-position-x: -67%;
+                    background-position-y: 50%;
+                
+                }
+                #gifprog {
+                    background-position-x: 100%;
+                    background-image: url(../img/programming.gif);
+                    background-size: 26%;
+                }
+                #gifmark {
+                    background-image: url(../img/communication.gif);
+                    background-size: 20%;
+                    background-position-x: 0;
+                }
+                
+                .carousel-control-prev {
+                width: 8%;
+                            backdrop-filter: saturate(250%) blur(1vh);
+                        background-color: rgba(255, 255, 255, 0.100);
+                                            }
+                                            .carousel-control-next {
+                                                width: 8%;
+                                                            backdrop-filter: saturate(250%) blur(1vh);
+                                                        background-color: rgba(255, 255, 255, 0.100);
+                                                                            }
+                
+                
+                
+                
+                
+                /*                                     WIREFRAME ANIMATION ET DISPOSITION                */                                                            
+                .image {
+                    display: flex;
+                    text-align: center;
+                    margin: 5%;
+                    justify-content: space-between;
+                }
+                .wireframe1{
+                    
+                    width: 20%;
+                    margin-right: 10%;
+                    transition: all 1s ease-out 1s;
+                    animation-name: transform;
+                    animation-duration: 4s;
+                    animation-fill-mode: forwards;
+                    
+                
+                }
+                .wireframe1:hover{
+                    transform:rotate(360deg) translate(150%,3em) scale(3);
+                    z-index: 99;
+                }
+                @keyframes transform {
+                    from {
+                      
+                        background:blue;
+                    }
+                to{
+                    transform: rotate(45deg);
+                }
+                }
+                
+                
+                
+                
+                .wireframe2{
+                        width: 20%;
+                        margin-left: 10%;
+                        transform: rotate(-45deg);
+                        transition: all 1s ease-out 1s;
+                }
+                    .wireframe2:hover{
+                
+                        transform: rotate(-360deg) translate(-150%,3em) scale(3);
+                        z-index: 99;}
+                .wireframe3{
+                    width: 20%;
+                
+                }
+                .wireframe3:hover {
+                    transform:translate(0,3em) scale(3);
+                }
+                
+                .wireframe4{
+                    width: 20%;
+                    margin-right: 10%;
+                    transform: rotate(-45deg);
+                    transition: all 1s ease-out 1s;
+                    
+                }
+                .wireframe4:hover{
+                    transform: rotate(360deg) translate(150%,-7em) scale(3);
+                    z-index: 99;}
+                .wireframe6{
+                    
+                    width: 20%;
+                    margin-left: 10%;
+                    animation-name: transform6;
+                    animation-duration: 4s;
+                    animation-fill-mode: forwards;
+                    transition: all 1s ease-out 1s;
+                }
+                @keyframes transform6 {
+                    from {
+                      
+                        background:blue;
+                    }
+                to{
+                    transform: rotate(45deg);
+                }
+                }
+                .wireframe6:hover{
+                    transform: rotate(360deg) translate(-150%,-7em) scale(3);
+                    z-index: 99;}
+                .wireframe5{
+                    width: 20%;}
+                .wireframe5:hover{
+                    transform: translate(0,-7em) scale(3);
+                }
+                
+                }
